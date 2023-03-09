@@ -114,116 +114,128 @@ body{
             }
 
 
-            .left-chats{
-                border-bottom: 1px solid #aebac139;
-                padding: 0 0 1.3em 0;
-                margin-bottom: 1.3em; 
-                display: flex;
-                flex-direction: column;
+            .left-chats-c{
+                overflow-y: scroll;
+                height: 50em;
 
-                .chat{
-                    color: #fff;
-                    display: flex;
-                    align-items: center;
-                    gap: 2em;
-                    transition: 0.2s;
-                    padding: .6em .5em;
-                    cursor: pointer;
-
-                    &:hover{
-                        background: #aebac139;
-                    }
-    
-                    .chat-logo{
-                        width: 4.9em;
-                        border-radius: 50%;
-                    }
-    
-                    .chat-info{
-                        display: flex;
-                        align-items: flex-start;
-                        justify-content: space-between;
-                        width: 100%;
-                        padding: 1em 0;
-                        border-bottom: 1px solid #aebac139;
-    
-                        .chat-name{
-    
-                            h1{
-                                font-size: 1.6em;
-                                font-weight: 400;
-                            }
-    
-                            p{
-                                color: var(--solgun);
-                                font-size: 1.2em;
-                            }
-                        }
-    
-                        .date{
-                            color: var(--solgun);
-                            font-size: 1.1em;
-    
-                        }
-    
-                    }
+                &::-webkit-scrollbar-thumb{
+                    background: var(--serch-backgroung);
+                }
+                &::-webkit-scrollbar{
+                    width: .8em;
                 }
 
-                .chat-last{
-                    color: #fff;
+                .left-chats{
+                    border-bottom: 1px solid #aebac139;
+                    padding: 0 0 1.3em 0;
+                    margin-bottom: 1.3em; 
                     display: flex;
-                    align-items: center;
-                    gap: 2em;
-                    transition: 0.2s;
-                    cursor: pointer;
-
-                    &:hover{
-                        background: #aebac139;
-                    }
+                    flex-direction: column;
     
-                    .chat-logo{
-                        width: 4.9em;
-                        border-radius: 50%;
-                    }
-    
-                    .chat-info{
+                    .chat{
+                        color: #fff;
                         display: flex;
-                        align-items: flex-start;
-                        justify-content: space-between;
-                        width: 100%;
-                        padding: 1em 0;
+                        align-items: center;
+                        gap: 2em;
+                        transition: 0.2s;
+                        padding: .6em .5em;
+                        cursor: pointer;
     
-                        .chat-name{
-    
-                            h1{
-                                font-size: 1.6em;
-                                font-weight: 400;
-                            }
-    
-                            p{
-                                color: var(--solgun);
-                                font-size: 1.2em;
-                            }
+                        &:hover{
+                            background: #aebac139;
                         }
+        
+                        .chat-logo{
+                            width: 4.9em;
+                            border-radius: 50%;
+                        }
+        
+                        .chat-info{
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            width: 100%;
+                            padding: 1em 0;
+                            border-bottom: 1px solid #aebac139;
+        
+                            .chat-name{
+        
+                                h1{
+                                    font-size: 1.6em;
+                                    font-weight: 400;
+                                }
+        
+                                p{
+                                    color: var(--solgun);
+                                    font-size: 1.2em;
+                                }
+                            }
+        
+                            .date{
+                                color: var(--solgun);
+                                font-size: 1.1em;
+        
+                            }
+        
+                        }
+                    }
     
-                        .date{
-                            color: var(--solgun);
-                            font-size: 1.1em;
+                    .chat-last{
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        gap: 2em;
+                        transition: 0.2s;
+                        cursor: pointer;
+    
+                        &:hover{
+                            background: #aebac139;
+                        }
+        
+                        .chat-logo{
+                            width: 4.9em;
+                            border-radius: 50%;
+                        }
+        
+                        .chat-info{
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            width: 100%;
+                            padding: 1em 0;
+        
+                            .chat-name{
+        
+                                h1{
+                                    font-size: 1.6em;
+                                    font-weight: 400;
+                                }
+        
+                                p{
+                                    color: var(--solgun);
+                                    font-size: 1.2em;
+                                }
+                            }
+        
+                            .date{
+                                color: var(--solgun);
+                                font-size: 1.1em;
+                            }
                         }
                     }
                 }
-            }
-            
-            .secret{
-                color: #fff;
-                font-size: 1.1em;
-                letter-spacing: 0.3px;
-                text-align: center;
-                margin-bottom: 1em;
-                user-select: none;
-
-                a{
-                    color: var(--link-color);
+                
+                .secret{
+                    color: #fff;
+                    font-size: 1.1em;
+                    letter-spacing: 0.3px;
+                    text-align: center;
+                    margin-bottom: 1em;
+                    user-select: none;
+    
+                    a{
+                        color: var(--link-color);
+                    }
                 }
             }
         }
@@ -232,7 +244,6 @@ body{
     .right-container{
         color: #fff;
         width: 100%;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -280,6 +291,15 @@ body{
                 display: flex;
                 flex-direction: column;
                 gap: 1.3em;
+                height: 55.5em;
+                overflow-y: scroll;
+
+                &::-webkit-scrollbar-thumb{
+                    background: var(--serch-backgroung);
+                }
+                &::-webkit-scrollbar{
+                    width: .8em;
+                }
 
                 .message-box-r{
                     display: flex;

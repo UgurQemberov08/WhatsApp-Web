@@ -107,14 +107,24 @@ body {
   color: var(--solgun);
   cursor: pointer;
 }
-.big-container .left-container .left-input .left-chats {
+.big-container .left-container .left-input .left-chats-c {
+  overflow-y: scroll;
+  height: 50em;
+}
+.big-container .left-container .left-input .left-chats-c::-webkit-scrollbar-thumb {
+  background: var(--serch-backgroung);
+}
+.big-container .left-container .left-input .left-chats-c::-webkit-scrollbar {
+  width: 0.8em;
+}
+.big-container .left-container .left-input .left-chats-c .left-chats {
   border-bottom: 1px solid rgba(174, 186, 193, 0.2235294118);
   padding: 0 0 1.3em 0;
   margin-bottom: 1.3em;
   display: flex;
   flex-direction: column;
 }
-.big-container .left-container .left-input .left-chats .chat {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat {
   color: #fff;
   display: flex;
   align-items: center;
@@ -123,14 +133,14 @@ body {
   padding: 0.6em 0.5em;
   cursor: pointer;
 }
-.big-container .left-container .left-input .left-chats .chat:hover {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat:hover {
   background: rgba(174, 186, 193, 0.2235294118);
 }
-.big-container .left-container .left-input .left-chats .chat .chat-logo {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat .chat-logo {
   width: 4.9em;
   border-radius: 50%;
 }
-.big-container .left-container .left-input .left-chats .chat .chat-info {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat .chat-info {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -138,19 +148,19 @@ body {
   padding: 1em 0;
   border-bottom: 1px solid rgba(174, 186, 193, 0.2235294118);
 }
-.big-container .left-container .left-input .left-chats .chat .chat-info .chat-name h1 {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat .chat-info .chat-name h1 {
   font-size: 1.6em;
   font-weight: 400;
 }
-.big-container .left-container .left-input .left-chats .chat .chat-info .chat-name p {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat .chat-info .chat-name p {
   color: var(--solgun);
   font-size: 1.2em;
 }
-.big-container .left-container .left-input .left-chats .chat .chat-info .date {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat .chat-info .date {
   color: var(--solgun);
   font-size: 1.1em;
 }
-.big-container .left-container .left-input .left-chats .chat-last {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat-last {
   color: #fff;
   display: flex;
   align-items: center;
@@ -158,33 +168,33 @@ body {
   transition: 0.2s;
   cursor: pointer;
 }
-.big-container .left-container .left-input .left-chats .chat-last:hover {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat-last:hover {
   background: rgba(174, 186, 193, 0.2235294118);
 }
-.big-container .left-container .left-input .left-chats .chat-last .chat-logo {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat-last .chat-logo {
   width: 4.9em;
   border-radius: 50%;
 }
-.big-container .left-container .left-input .left-chats .chat-last .chat-info {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat-last .chat-info {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   padding: 1em 0;
 }
-.big-container .left-container .left-input .left-chats .chat-last .chat-info .chat-name h1 {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat-last .chat-info .chat-name h1 {
   font-size: 1.6em;
   font-weight: 400;
 }
-.big-container .left-container .left-input .left-chats .chat-last .chat-info .chat-name p {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat-last .chat-info .chat-name p {
   color: var(--solgun);
   font-size: 1.2em;
 }
-.big-container .left-container .left-input .left-chats .chat-last .chat-info .date {
+.big-container .left-container .left-input .left-chats-c .left-chats .chat-last .chat-info .date {
   color: var(--solgun);
   font-size: 1.1em;
 }
-.big-container .left-container .left-input .secret {
+.big-container .left-container .left-input .left-chats-c .secret {
   color: #fff;
   font-size: 1.1em;
   letter-spacing: 0.3px;
@@ -194,13 +204,12 @@ body {
      -moz-user-select: none;
           user-select: none;
 }
-.big-container .left-container .left-input .secret a {
+.big-container .left-container .left-input .left-chats-c .secret a {
   color: var(--link-color);
 }
 .big-container .right-container {
   color: #fff;
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -244,6 +253,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.3em;
+  height: 55.5em;
+  overflow-y: scroll;
+}
+.big-container .right-container .birlik .right-chat::-webkit-scrollbar-thumb {
+  background: var(--serch-backgroung);
+}
+.big-container .right-container .birlik .right-chat::-webkit-scrollbar {
+  width: 0.8em;
 }
 .big-container .right-container .birlik .right-chat .message-box-r {
   display: flex;
