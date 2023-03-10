@@ -306,7 +306,8 @@ body{
                 display: flex;
                 flex-direction: column;
                 gap: 1.3em;
-                height: 50em;
+                height: 80vh;
+
                 overflow-y: scroll;
 
                 &::-webkit-scrollbar-thumb{
@@ -360,6 +361,10 @@ body{
                     #smile{
                         color: transparent;
                         cursor: pointer;
+
+                        &:hover{
+                            opacity: 0.9;
+                        }
                     }
 
                     &:hover{
@@ -410,6 +415,10 @@ body{
                     #smile{
                         color: transparent;
                         cursor: pointer;
+
+                        &:hover{
+                            opacity: 0.9;
+                        }
                     }
 
                     &:hover{

@@ -270,7 +270,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.3em;
-  height: 50em;
+  height: 80vh;
   overflow-y: scroll;
 }
 .big-container .right-container .birlik .right-chat::-webkit-scrollbar-thumb {
@@ -318,6 +318,9 @@ body {
   color: transparent;
   cursor: pointer;
 }
+.big-container .right-container .birlik .right-chat .smile-box-r #smile:hover {
+  opacity: 0.9;
+}
 .big-container .right-container .birlik .right-chat .smile-box-r:hover #smile {
   color: var(--smile-color);
 }
@@ -357,6 +360,9 @@ body {
 .big-container .right-container .birlik .right-chat .smile-box-l #smile {
   color: transparent;
   cursor: pointer;
+}
+.big-container .right-container .birlik .right-chat .smile-box-l #smile:hover {
+  opacity: 0.9;
 }
 .big-container .right-container .birlik .right-chat .smile-box-l:hover #smile {
   color: var(--smile-color);
