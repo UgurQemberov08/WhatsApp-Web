@@ -112,8 +112,8 @@ body {
   cursor: pointer;
 }
 .big-container .left-container .left-input .left-chats-c {
+  height: 80vh;
   overflow-y: scroll;
-  height: 50em;
 }
 .big-container .left-container .left-input .left-chats-c::-webkit-scrollbar-thumb {
   background: var(--serch-backgroung);

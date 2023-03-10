@@ -55,6 +55,7 @@ body{
         min-width: 41em;
         border-right: 1px solid #aebac139;
 
+
         .left-nav{
             @include display-between();
             padding: 1em 1.5em;
@@ -118,8 +119,8 @@ body{
 
 
             .left-chats-c{
+                height: 80vh;
                 overflow-y: scroll;
-                height: 50em;
 
                 &::-webkit-scrollbar-thumb{
                     background: var(--serch-backgroung);
