@@ -30,6 +30,8 @@ html {
 
 body {
   background: var(--app-background);
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .big-container {
